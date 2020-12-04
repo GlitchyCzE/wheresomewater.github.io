@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>Where's Some Water - Dashboard</title>
+
+        <link href="/wheressomewater.github.io/icon.pngn.png" rel="shortcut icon" type="image/x-icon">
+        <link href="/wheressomewater.github.io/bootstrap.min.cssn.css" rel="stylesheet">
+        <script src="/wheressomewater.github.io/jquery.min.jsin.js"></script>
+        <style>
+            body {
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+                <a class="navbar-brand" href="/wheressomewater.github.io/home.html.html"><img src="/wheressomewater.github.io/WheresSomeWaterLarge.pnge.png" style="width: 150px"></a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/home.html.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active font-weight-bold" href="/wheressomewater.github.io/contact.html.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/map.html.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/request.html.html">Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/supply.html.html">Supply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/report.html.html">Report</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/signup.html.html">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/wheressomewater.github.io/login.html.html">Login</a>
+                    </li>
+                </ul>
+                <script>
+                    var path = window.location.href;
+                    $("#navbar a.nav-link").each(function () {
+                        if (this.href === path) {
+                            $(this).addClass("active font-weight-bold");
+                        }
+                    });
+                </script>
+            </nav>
+        </header>
+        <main>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="/wheressomewater.github.io/WaterMap.pngp.png" width="100%">
+                    </div>
+                    <div class="col-sm">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="card-title">Welcome!</h1>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Your Nearest Water Source</h5>
+                                <br>
+                                <h6 class="card-subtitle mb-2">Town Name</h6>
+                                <p class="card-text">0.7 Miles South South East</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Location Information</h5>
+                                <br>
+                                <h6 class="card-subtitle mb-2">Town Name</h6>
+                                <p class="card-text">Population: 4,200<br>Needed Daily: 9000 Liters</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card-body">
+                            <img height="100px" src="/wheressomewater.github.io/user.pngr.png">
+                            <h5 class="card-title">Hello user!</h5>
+                            <br>
+                            <h6 class="card-subtitle mb-2">Resident of Town Name</h6>
+                            <p class="card-text">Verified<br>Requesting: 3 Litters per Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="text-center text-muted">© Copyright 2020 Water Group</p>
+        </footer>
+    </body>
+</html>
